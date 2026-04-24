@@ -91,4 +91,20 @@ bool delNode(int nim)
     return true;
 }
 
+void traverse()
+{
+    if (listEmpty())
+    {
+        cout << "\nList Kosong\n";
+        return;
+    }
+
+    Node *current = START;
+    while (current != NULL)
+    {
+        cout << current->noMhs << endl;
+        current = current->next;
+    }
+}
+
 };

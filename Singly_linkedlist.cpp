@@ -24,7 +24,7 @@ class LinkedList
 
             Node *nodeBaru = new Node;
             nodebaru -> noMhs = nim;
-            
+
            if (START == NULL || nim <= START -> noMhs)
             {
                 if ((START != NULL) && (nim == START -> noMhs))
@@ -36,5 +36,9 @@ class LinkedList
                 nodeBaru->next = START;
                 START = nodeBaru;
                 return;
+            Node *previous = START;
+            Node *current = START;
+            
+        }
 
 }
